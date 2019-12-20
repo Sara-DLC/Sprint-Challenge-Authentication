@@ -27,11 +27,11 @@ function RegisterForm(props){
         onSubmit={register}
         render={props => {
             return(
-                <Form className='form'>
+                <Form className='app'>
                     <label htmlFor='username'>Username</label>
-                    <Field name='username' type='text' placeholder='username'/>
+                    <Field className='field' name='username' type='text' placeholder='username'/>
                     <label htmlFor='password'>Password</label>
-                    <Field name='password' type='password' placeholder='password'/>
+                    <Field className='field' name='password' type='password' placeholder='password'/>
                     <button type='submit'>Register</button>
                 </Form>
             )

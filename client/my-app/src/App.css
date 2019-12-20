@@ -1,6 +1,43 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  display:flex;
+  flex-direction: column;
+  background: rgba(247, 245, 138, 0.945);
 }
+
+h1{
+  margin-left: 110px;
+  font-size: 3rem;
+}
+
+.app {
+  display:flex;
+  flex-direction: column;
+  margin: 2%;
+  font-size: 2rem;
+}
+
+.field {
+  font-size: 1.5rem;
+  margin: 30px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 5px;
+  display:flex;
+}
+
+button {
+  font-size: 1rem;
+  border-radius: 30px;
+  width: 200px;
+  margin-left: 35px;
+}
+
+
+
 
 
 
