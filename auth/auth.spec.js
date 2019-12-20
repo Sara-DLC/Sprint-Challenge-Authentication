@@ -2,32 +2,16 @@ const request = require("supertest");
 
 const server = require("../api/server");
 
-// describe("GET /", function() {
-//     it("should return status code 200", function() {
+describe("GET /", function() {
+    it("should return a response", function() {
     
-//         return request(server)
-//         .get("/")
-//         .then(response => {
-//         expect(response.status).toBe(200);
-//         });
-//     });
-
-//     it("should return a JSON", function() {
-//     return request(server)
-//         .get("/")
-//         .then(res => {
-//         expect(res.type).toMatch(/json/i);
-//         });
-//     });
-
-//     it("should return {api: 'working'}", function() {
-//     return request(server)
-//         .get("/")
-//         .then(res => {
-//         expect(res.body.api).toBe("working");
-//         });
-//     });
-// });
+        return request(server)
+        .get("/")
+        .then(response => {
+        expect(response.status).toBeTruthy();
+        });
+    });
+});
 
 describe('POST /register', () => {
 
